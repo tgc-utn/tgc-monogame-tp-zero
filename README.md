@@ -17,7 +17,7 @@ Bonus:
 * Movimiento con aceleracion y velocidad por separado
 * <kbd>espacio</kbd> para saltar
 
-
+__No es necesario modificar la c&aacute;mara, la misma apunta al costado de la matriz CarWorld de manera intencional.__
 
 ## Requisitos tecnicos
 * [.NET Core SDK](https://docs.microsoft.com/dotnet/core/install/sdk)
