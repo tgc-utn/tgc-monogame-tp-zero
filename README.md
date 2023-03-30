@@ -16,12 +16,11 @@ Trabajo práctico cero de la asignatura electiva [Técnicas de Gráficos por Com
   - <kbd>w</kbd> y <kbd>s</kbd> para acelerar y desacelerar
   - <kbd>a</kbd> y <kbd>d</kbd> para girar el auto
 
-__No es necesario modificar la c&aacute;mara, la misma apunta al costado de la matriz CarWorld de manera intencional.__
-
 Bonus:
-
 - Movimiento con aceleracion y velocidad por separado
 - <kbd>espacio</kbd> para saltar
+
+__No es necesario modificar la c&aacute;mara, la misma apunta al costado de la matriz CarWorld de manera intencional.__
 
 ## Configuración del entorno de desarrollo
 
