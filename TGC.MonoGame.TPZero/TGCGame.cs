@@ -18,7 +18,7 @@ namespace TGC.MonoGame.TP
         public const string ContentFolderSounds = "Sounds/";
         public const string ContentFolderSpriteFonts = "SpriteFonts/";
         public const string ContentFolderTextures = "Textures/";
-        
+
         private GraphicsDeviceManager Graphics { get; }
         private CityScene City { get; set; }
         private Model CarModel { get; set; }
@@ -27,17 +27,17 @@ namespace TGC.MonoGame.TP
 
 
         /// <summary>
-        ///     Constructor del juego
+        ///     Constructor del juego.
         /// </summary>
         public TGCGame()
         {
-            // Se encarga de la configuracion y administracion del Graphics Device
+            // Se encarga de la configuracion y administracion del Graphics Device.
             Graphics = new GraphicsDeviceManager(this);
 
-            // Carpeta donde estan los recursos que vamos a usar
+            // Carpeta donde estan los recursos que vamos a usar.
             Content.RootDirectory = "Content";
 
-            // Hace que el mouse sea visible
+            // Hace que el mouse sea visible.
             IsMouseVisible = true;
         }
 
@@ -47,22 +47,22 @@ namespace TGC.MonoGame.TP
         /// </summary>
         protected override void Initialize()
         {
-            // Enciendo Back-Face culling
-            // Configuro Blend State a Opaco
+            // Enciendo Back-Face culling.
+            // Configuro Blend State a Opaco.
             var rasterizerState = new RasterizerState();
             rasterizerState.CullMode = CullMode.CullCounterClockwiseFace;
             GraphicsDevice.RasterizerState = rasterizerState;
             GraphicsDevice.BlendState = BlendState.Opaque;
 
-            // Configuro el tamaño de la pantalla
+            // Configuro las dimensiones de la pantalla.
             Graphics.PreferredBackBufferWidth = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width - 100;
             Graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height - 100;
             Graphics.ApplyChanges();
 
-            // Creo una camaar para seguir a nuestro auto
+            // Creo una camaar para seguir a nuestro auto.
             FollowCamera = new FollowCamera(GraphicsDevice.Viewport.AspectRatio);
 
-            // Configuro la matriz de mundo del auto
+            // Configuro la matriz de mundo del auto.
             CarWorld = Matrix.Identity;
 
             base.Initialize();
@@ -74,29 +74,31 @@ namespace TGC.MonoGame.TP
         /// </summary>
         protected override void LoadContent()
         {
-            // Creo la escena de la ciudad
+            // Creo la escena de la ciudad.
             City = new CityScene(Content);
 
-            // La carga de contenido debe ser realizada aca
+            // La carga de contenido debe ser realizada aca.
 
             base.LoadContent();
         }
 
         /// <summary>
         ///     Es llamada N veces por segundo. Generalmente 60 veces pero puede ser configurado.
-        ///     La logica general debe ser escrita aca, junto al procesamiento de mouse/teclas
+        ///     La logica general debe ser escrita aca, junto al procesamiento de mouse/teclas.
         /// </summary>
         protected override void Update(GameTime gameTime)
         {
-            // Caputo el estado del teclado
+            // Caputo el estado del teclado.
             var keyboardState = Keyboard.GetState();
             if (keyboardState.IsKeyDown(Keys.Escape))
-                // Salgo del juego
+            {
+                // Salgo del juego.
                 Exit();
+            }
 
-            // La logica debe ir aca
+            // La logica debe ir aca.
 
-            // Actualizo la camara, enviandole la matriz de mundo del auto
+            // Actualizo la camara, enviandole la matriz de mundo del auto.
             FollowCamera.Update(gameTime, CarWorld);
 
             base.Update(gameTime);
@@ -104,28 +106,28 @@ namespace TGC.MonoGame.TP
 
 
         /// <summary>
-        ///     Llamada para cada frame
+        ///     Llamada para cada frame.
         ///     La logica de dibujo debe ir aca.
         /// </summary>
         protected override void Draw(GameTime gameTime)
         {
-            // Limpio la pantalla
+            // Limpio la pantalla.
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // Dibujo la ciudad
+            // Dibujo la ciudad.
             City.Draw(gameTime, FollowCamera.View, FollowCamera.Projection);
 
-            // El dibujo del auto debe ir aca
+            // El dibujo del auto debe ir aca.
 
             base.Draw(gameTime);
         }
 
         /// <summary>
-        ///     Libero los recursos cargados
+        ///     Libero los recursos cargados.
         /// </summary>
         protected override void UnloadContent()
         {
-            // Libero los recursos cargados dessde Content Manager
+            // Libero los recursos cargados dessde Content Manager.
             Content.Unload();
 
             base.UnloadContent();
