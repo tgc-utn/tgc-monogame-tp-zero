@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using TGC.MonoGame.TP.Content.Models;
 
-namespace TGC.MonoGame.TP
+namespace TGC.MonoGame.TP.Zero
 {
     /// <summary>
     ///     Clase principal del juego.
@@ -59,7 +56,7 @@ namespace TGC.MonoGame.TP
             Graphics.PreferredBackBufferHeight = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height - 100;
             Graphics.ApplyChanges();
 
-            // Creo una camaar para seguir a nuestro auto.
+            // Creo una camara para seguir a nuestro auto.
             FollowCamera = new FollowCamera(GraphicsDevice.Viewport.AspectRatio);
 
             // Configuro la matriz de mundo del auto.

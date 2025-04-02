@@ -1,7 +1,7 @@
 # TGC - MonoGame - TP Zero
 
-[![.NET](https://github.com/tgc-utn/tgc-monogame-tp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/tgc-utn/tgc-monogame-tp/actions/workflows/dotnet.yml)
-[![GitHub license](https://img.shields.io/github/license/tgc-utn/tgc-monogame-tp.svg)](https://github.com/tgc-utn/tgc-monogame-tp/blob/master/LICENSE)
+[![.NET](https://github.com/tgc-utn/tgc-monogame-tp-zero/actions/workflows/dotnet.yml/badge.svg)](https://github.com/tgc-utn/tgc-monogame-tp-zero/actions/workflows/dotnet.yml)
+[![GitHub license](https://img.shields.io/github/license/tgc-utn/tgc-monogame-tp-zero.svg)](https://github.com/tgc-utn/tgc-monogame-tp-zero/blob/master/LICENSE)
 
 [#BuiltWithMonoGame](http://www.monogame.net) and [.NET Core](https://dotnet.microsoft.com)
 
