@@ -1,12 +1,10 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace TGC.MonoGame.TP.Content.Models
+namespace TGC.MonoGame.TP.Zero
 {
     /// <summary>
     /// A City Scene to be drawn
@@ -41,7 +39,6 @@ namespace TGC.MonoGame.TP.Content.Models
             var texture = effect.Texture;
 
             // Set the Texture to the Effect
-            // 
             Effect.Parameters["ModelTexture"].SetValue(texture);
 
             // Assign the mesh effect
