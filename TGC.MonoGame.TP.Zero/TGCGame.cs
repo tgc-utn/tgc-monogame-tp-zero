@@ -85,7 +85,7 @@ namespace TGC.MonoGame.TP.Zero
         /// </summary>
         protected override void Update(GameTime gameTime)
         {
-            // Caputo el estado del teclado.
+            // Capturo el estado del teclado.
             var keyboardState = Keyboard.GetState();
             if (keyboardState.IsKeyDown(Keys.Escape))
             {
