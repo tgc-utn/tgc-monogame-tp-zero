@@ -3,11 +3,11 @@
 [![.NET](https://github.com/tgc-utn/tgc-monogame-tp-zero/actions/workflows/dotnet.yml/badge.svg)](https://github.com/tgc-utn/tgc-monogame-tp-zero/actions/workflows/dotnet.yml)
 [![GitHub license](https://img.shields.io/github/license/tgc-utn/tgc-monogame-tp-zero.svg)](https://github.com/tgc-utn/tgc-monogame-tp-zero/blob/master/LICENSE)
 
-[#BuiltWithMonoGame](http://www.monogame.net) and [.NET Core](https://dotnet.microsoft.com)
+[#BuiltWithMonoGame](https://monogame.net/) and [.NET Core](https://dotnet.microsoft.com)
 
 # Descripción
 
-Trabajo práctico cero de la asignatura electiva [Técnicas de Gráficos por Computadora](http://tgc-utn.github.io/) (TGC) en la carrera de Ingeniería en Sistemas de Información. Universidad Tecnológica Nacional, Facultad Regional Buenos Aires (UTN-FRBA).
+Trabajo práctico cero de la asignatura electiva [Técnicas de Gráficos por Computadora](https://tgc-utn.github.io/) (TGC) en la carrera de Ingeniería en Sistemas de Información. Universidad Tecnológica Nacional, Facultad Regional Buenos Aires (UTN-FRBA).
 
 ## Consigna
 
@@ -17,7 +17,7 @@ Trabajo práctico cero de la asignatura electiva [Técnicas de Gráficos por Com
   - <kbd>a</kbd> y <kbd>d</kbd> para girar el auto
 
 Bonus:
-- Movimiento con aceleracion y velocidad por separado
+- Movimiento con aceleración y velocidad por separado
 - <kbd>espacio</kbd> para saltar
 
 __No es necesario modificar la c&aacute;mara, la misma apunta al costado de la matriz CarWorld de manera intencional.__
